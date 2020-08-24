@@ -12,21 +12,29 @@
         .my-name {
             font-family:serif;
             text-align:center;
+            text-decoration:underline;
         }
         .section-links {
-            text-align:center;
+            font-size:15px;
+          
         }
         .main-sections {
             font-family:sans-serif;
             background-color:black;
             text-align:center;
             color:white;
+            padding:5px;
+            
+            margin-bottom:20px;
         }
         .description-info {
             font-family:monospace;
             font-size:15px;
             font-weight:400;
             width:90%;
+            margin-top:60px;
+            text-align:center;
+         
         }
  
         .buttons {
@@ -38,22 +46,34 @@
             padding:10px 20px;
             text-decoration:none;
             text-align:center;
+            width:30%;
+            display:inline-block;
+            margin-left:33%;
             
         }
         img {
             width:100px;
             float:left;
             margin-right:10px;
+            margin-left:10px;
+            border:1px groove black;
+            border-radius:25% 25% 25% 25%;
+            padding:2px;
+            background-color:black;
             
         }
         .description-block {
             padding-bottom:15%;
         }
         .list-elements {
-            font-size:20px;
+            font-size:19px;
             margin-left:40%;
             margin-bottom:20px;
             width:30%;
+            padding:2px;
+        }
+        .impar {
+            font-weight:600;
         }
 
     </style>
@@ -62,26 +82,29 @@
     <h1 class="my-name">Felipe Alcântara Vieira.</h1>
     <br>
     <h3 class="section-links">Seções:</h3> 
-    <div class="section-links"><p>
-        <a href="#identidade">Quem sou eu?</a> <br>
-        <a href="#habilidades">Habilidades</a> <br>
-        <a href="#comunicação">Comunicação</a> <br> </p>
+    <div class="section-links">
+        <ol>
+           <li> <a href="#identidade">Quem sou eu?</a> </li> 
+           <li> <a href="#habilidades">Habilidades</a> </li> 
+           <li> <a href="#comunicação">Comunicação</a> </li> 
+        </ol>
     </div>
     <div class="description-block">
         <h2 class="main-sections" id="identidade">Quem sou eu?</h2>
-        <p class="description-info">  <a target="_blank" href="https://i.imgur.com/LzuUQUy.jpg"><img src="https://i.imgur.com/LzuUQUy.jpg" alt="foto minha sorridente"> </a>Olá, meu nome é Felipe A. Vieira!<br>
-        Sou estudante de <strong>Desenvolvimento de Software da <a target="_blank" href="https://www.betrybe.com/?utm_medium=cpc&utm_source=google&utm_campaign=traffic_nacional_programacao&utm_content=anuncio01&gclid=EAIaIQobChMI9bjt9eW06wIVDAyRCh3XngvjEAAYASAAEgLcvPD_BwE">Trybe</a></strong>. Sou brasileiro nascido em Pelotas, Rio Grande do Sul mas moro atualmente em Florianópolis, Santa Catarina. Estudei no Instituto Federal de Santa Catarina (IFSC) fazendo o curso técnico em Eletrônica.  </p>
+        <a target="_blank" href="https://i.imgur.com/LzuUQUy.jpg"><img src="https://i.imgur.com/LzuUQUy.jpg" alt="foto minha sorridente"> </a>
+        <p class="description-info">Olá, meu nome é Felipe A. Vieira!<br>
+        Sou estudante de <strong>Desenvolvimento de Software na <a target="_blank" href="https://www.betrybe.com/?utm_medium=cpc&utm_source=google&utm_campaign=traffic_nacional_programacao&utm_content=anuncio01&gclid=EAIaIQobChMI9bjt9eW06wIVDAyRCh3XngvjEAAYASAAEgLcvPD_BwE">Trybe</a></strong>. Sou brasileiro nascido em Pelotas, Rio Grande do Sul mas moro atualmente em Florianópolis, Santa Catarina. Estudei no Instituto Federal de Santa Catarina (IFSC), fazendo o curso técnico em Eletrônica.  </p>
     </div>
 
 
     <div class="habilities-block">
         <h3 class="main-sections" id="habilidades">Habilidades</h3> 
         <ul class="list-elements">
-            <li>Inglês Avançado</li>
+            <li class="impar">Inglês Avançado</li>
             <li>Shell Script</li>
-            <li>HTML</li>
+            <li class="impar">HTML</li>
             <li>CSS</li>
-            <li>Capacidade Analítica</li>
+            <li class="impar">Capacidade Analítica</li>
         </ul>
     </div>
     <h3 class="main-sections" id="comunicação">Comunicação</h3>
