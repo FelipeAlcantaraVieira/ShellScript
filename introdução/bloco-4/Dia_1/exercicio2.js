@@ -3,7 +3,7 @@ const b = 5;
 let c;
 
 if (a > b){
-    c = a;;
+    c = a;
 } else {
     c = b;
 }
