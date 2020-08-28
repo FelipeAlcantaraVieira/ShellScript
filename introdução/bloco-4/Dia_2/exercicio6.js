@@ -6,4 +6,8 @@ for (let counter in numbers){
         numerosImpar += 1;
     }
 }
+if (numerosImpar == 0){
+    console.log('nenhum valor impar encontrado')
+} else {
 console.log(`o vetor tem ${numerosImpar} numeros impares`);
+}
