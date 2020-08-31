@@ -7,5 +7,5 @@ for (counter = 0; counter <= number; counter += 1){
 }
 
 for (counter2 = 0; counter2 <= number; counter2 +=1) {
-    console.log(`${array}`);
+    console.log(`${array.join('')}`);
 }
