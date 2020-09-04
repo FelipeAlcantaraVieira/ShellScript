@@ -39,9 +39,14 @@
       </div>
     </div>
     <script>
-        function changePText(){ // primeira questão
-            document.getElementsByTagName('p')[1].innerHTML = "Bem-sucedido na minha carreira de programação";
+        function changePText(position){ // primeira questão
+            document.getElementsByTagName('p')[position].innerHTML = "Bem-sucedido na minha carreira de programação";
         }
+        changePText(1)
+        function changeSquareTrybeGreen(square){
+            document.getElementsByClassName('main-content')[square].style.background = "rgb(76,164,109)";
+        }
+        changeSquareTrybeGreen(0)
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
         - document.getElementById()
