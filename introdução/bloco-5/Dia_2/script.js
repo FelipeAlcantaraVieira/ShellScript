@@ -54,3 +54,4 @@ for (counter = 1; counter <= 4; counter += 1){
 
 // parte 2
 // exercicio 1
+firstHeader.className = 'title';
