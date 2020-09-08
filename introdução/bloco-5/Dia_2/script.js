@@ -63,4 +63,9 @@ for (let indexu in h3Header) {
 }
 
 // exercicio 3
-mainDiv.removeChild(leftDiv);
+const leftDivContent = document.getElementsByClassName('left-content')[0];
+mainDiv.removeChild(leftDivContent);
+
+// exercicio 4
+const rightDivContent = document.getElementsByClassName('right-content')[0];
+rightDivContent.style.marginRight = 'auto';
