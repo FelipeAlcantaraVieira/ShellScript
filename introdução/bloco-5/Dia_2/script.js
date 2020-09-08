@@ -7,3 +7,7 @@ let primeiraDiv = document.createElement('div');
 primeiraDiv.className = "main-content";
 document.body.appendChild(primeiraDiv);
 // exercicio 3
+let segundaDiv = document.createElement('div');
+primeiraDiv.className = "center-content";
+document.primeiraDiv.appendChild(segundaDiv);
+// exercicio 4
