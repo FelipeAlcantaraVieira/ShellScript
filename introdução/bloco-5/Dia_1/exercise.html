@@ -39,14 +39,39 @@
       </div>
     </div>
     <script>
-        function changePText(position){ // primeira questão
-            document.getElementsByTagName('p')[position].innerHTML = "Bem-sucedido na minha carreira de programação";
+        function changePText(){ // exercicio 1
+            document.getElementsByTagName('p')[1].innerHTML = "Bem-sucedido na minha carreira de programação";
         }
-        changePText(1)
-        function changeSquareTrybeGreen(square){
-            document.getElementsByClassName('main-content')[square].style.background = "rgb(76,164,109)";
+        changePText(1);
+
+        function changeSquareTrybeGreen(){ // exercicio 2
+            document.getElementsByClassName('main-content')[0].style.background = "rgb(76,164,109)";
         }
-        changeSquareTrybeGreen(0)
+        changeSquareTrybeGreen(0);
+
+        function changeSquareWhite(){ // exercicio 3
+            document.getElementsByClassName('center-content')[0].style.background = 'white';
+        }
+        changeSquareWhite();
+
+        function fixFirstHeader(){ // exercicio 4
+            document.getElementsByTagName('h1')[0].innerText = 'Exercício 5.1 - JavaScript';
+        }
+        fixFirstHeader();
+
+        function paragraphToUpperCase(){ // exercicio 5
+        let textinho = document.getElementsByTagName('p')[1];
+            textinho.innerText = textinho.innerText.toUpperCase(); 
+        }
+        paragraphToUpperCase();
+
+        function showParagraph(){ // exercicio 6
+            let paragraph = document.getElementsByTagName('p');
+            for (let index = 0; index < paragraph.length; index+= 1){
+                console.log(paragraph[index].innerHTML);
+            }
+        }
+        showParagraph();
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
         - document.getElementById()
