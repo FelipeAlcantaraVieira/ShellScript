@@ -1,3 +1,4 @@
+// parte 1
 // exercicio 1
 const firstHeader = document.createElement('h1');
 firstHeader.innerText = "Exercício 5.2 - JavaScript DOM"
@@ -43,3 +44,13 @@ for (let listElement of array){
     list.appendChild(listElementItem);
 }
 rightDiv.appendChild(list);
+
+// exercicio 9
+for (counter = 1; counter <= 4; counter += 1){
+    const h3Header = document.createElement('h3');
+    h3Header.innerHTML = 'numero ' + counter;
+    mainDiv.appendChild(h3Header);
+}
+
+// parte 2
+// exercicio 1
