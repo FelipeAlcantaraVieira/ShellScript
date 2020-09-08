@@ -61,3 +61,6 @@ let h3Header = document.getElementsByTagName('h3');
 for (let indexu in h3Header) {
     h3Header[indexu].className = 'description';
 }
+
+// exercicio 3
+mainDiv.removeChild(leftDiv);
