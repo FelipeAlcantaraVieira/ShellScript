@@ -69,3 +69,7 @@ mainDiv.removeChild(leftDivContent);
 // exercicio 4
 const rightDivContent = document.getElementsByClassName('right-content')[0];
 rightDivContent.style.marginRight = 'auto';
+
+// exercicio 5
+list.lastChild.remove();
+list.lastChild.remove();
