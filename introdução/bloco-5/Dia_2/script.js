@@ -55,3 +55,9 @@ for (counter = 1; counter <= 4; counter += 1){
 // parte 2
 // exercicio 1
 firstHeader.className = 'title';
+
+// exercicio 2
+let h3Header = document.getElementsByTagName('h3');
+for (let indexu in h3Header) {
+    h3Header[indexu].className = 'description';
+}
