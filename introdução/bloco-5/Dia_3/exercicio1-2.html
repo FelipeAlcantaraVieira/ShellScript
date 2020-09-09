@@ -17,6 +17,15 @@
         exibido.
       </p>
       <div class="tarefa1">Adicione o botão aqui!</div>
+      <script language="javascript" type="text/javascript">
+        // tarefa 1
+        let divBotao = document.querySelector(".tarefa1");
+        leBotao = document.createElement('button');
+        leBotao.id = "botao1";
+        leBotao.innerHTML = " Clique neste botão"
+        divBotao.appendChild(leBotao)
+        leBotao.addEventListener("click", function(){alert("voce clicou no botao");})
+          </script>
       <hr />
       <h2>Tarefa 2</h2>
       <p>
@@ -31,7 +40,18 @@
         exibir um alerta contendo a mensagem "Desconto de R$(resultado)", sendo
         <strong>discount</strong> o resultado da multiplicação.
       </p>
-      <!-- -->
+     <button id="botao2">Descontinho Maroto</button>
+     <script>
+         // tarefa 2
+        let leBotao2 = document.querySelector("#botao2");
+        function dixconto(){
+           let productPrice = 59.99;
+           let discount = 0.30;
+           let result = productPrice * discount;
+           alert("Um desconto de R$" + result);
+       }
+        leBotao2.addEventListener("click", dixconto);
+     </script>
       <hr />
       <h2>Bônus</h2>
       <p>
@@ -49,24 +69,5 @@
       </p>
       <!-- Adicione a tag <img /> aqui -->
     </div>
-    <script language="javascript" type="text/javascript">
-    // tarefa 1
-    let divBotao = document.querySelector(".tarefa1");
-    leBotao = document.createElement('button');
-    leBotao.id = "botao1";
-    leBotao.innerHTML = " Clique neste botão"
-    divBotao.appendChild(leBotao)
-    leBotao.addEventListener("click", function(){alert("voce clicou no botao");})
-    // tarefa 2
-
-   /* let leBotao2 = document.querySelector("#botao2");
-    leBotao2.addEventListener("click", dixconto);
-    function dixconto(){
-            let productPrice = 59.99;
-            let discount = 0.30;
-            let discount = productPrice * discount;
-            alert("Desconto de R$(resultado)");
-        }*/
-      </script>
   </body>
 </html>
