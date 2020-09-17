@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="form.html" method="POST">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div>
+                <label for="">Nome</label>
+                <input name="name" required="required" placeholder="Digite seu nome" type="text" maxlength="40">
+            </div>
+            <div>
+                <label for="">E-mail</label>
+                <input name="email" required="required" placeholder="Digite seu e-mail" type="text" maxlength="50">
+            </div>
+            <div>
+                <label for="">CPF</label>
+                <input name="cpf" required="required" placeholder="Digite seu CPF" type="text" maxlength="11">
+            </div>
+            <div>
+                <label for="">Endereço</label>
+                <input name="endereco" required="required" placeholder="Digite seu Endereço" type="text" maxlength="200">
+            </div>
+            <div>
+                <label for="">Cidade</label>
+                <input name="cidade" required="required" placeholder="Digite sua Cidade" type="text" maxlength="28">
+            </div>
+            <div>
+            <p>Tipo</p>
+            <label for="casa"><input id="casa" name="moradia" type="radio" value="Casa">Casa</label>
+            <label for="apt"><input id="apt" name="moradia" type="radio" value="Apartamento">Apartamento</label>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
