@@ -4,30 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <link type="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="form.html" method="POST">
-        <fieldset>
+    <header>
+        <h1>Formulário</h1>
+    </header>
+    <form action="form.html" method="POST" class="forms">
+        <fieldset required>
             <legend>Dados Pessoais</legend>
             <div>
                 <label for="">Nome</label>
-                <input name="name" required="required" placeholder="Digite seu nome" type="text" maxlength="40">
+                <input name="name" placeholder="Digite seu nome" type="text" maxlength="40">
             </div>
             <div>
                 <label for="">E-mail</label>
-                <input name="email" required="required" placeholder="Digite seu e-mail" type="text" maxlength="50">
+                <input name="email" placeholder="Digite seu e-mail" type="text" maxlength="50">
             </div>
             <div>
                 <label for="">CPF</label>
-                <input name="cpf" required="required" placeholder="Digite seu CPF" type="text" maxlength="11">
+                <input name="cpf" placeholder="Digite seu CPF" type="text" maxlength="11">
             </div>
             <div>
                 <label for="">Endereço</label>
-                <input name="endereco" required="required" placeholder="Digite seu Endereço" type="text" maxlength="200">
+                <input name="endereco" placeholder="Digite seu Endereço" type="text" maxlength="200">
             </div>
             <div>
                 <label for="">Cidade</label>
-                <input name="cidade" required="required" placeholder="Digite sua Cidade" type="text" maxlength="28">
+                <input name="cidade" placeholder="Digite sua Cidade" type="text" maxlength="28">
+            </div>
+            <div>
+                <label for="">Estado</label>
+                <select required="required" name="estado" id="select-id">
+                    <option disabled selected value="">--Selecione--</option>
+                </select>
             </div>
             <div>
             <p>Tipo</p>
@@ -36,5 +46,6 @@
             </div>
         </fieldset>
     </form>
+    <script src="script.js"></script>
 </body>
 </html>
