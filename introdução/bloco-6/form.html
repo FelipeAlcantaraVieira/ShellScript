@@ -35,14 +35,41 @@
             </div>
             <div>
                 <label for="">Estado</label>
-                <select required="required" name="estado" id="select-id">
+                <select name="estado" id="select-id">
                     <option disabled selected value="">--Selecione--</option>
                 </select>
             </div>
             <div>
             <p>Tipo</p>
             <label for="casa"><input id="casa" name="moradia" type="radio" value="Casa">Casa</label>
-            <label for="apt"><input id="apt" name="moradia" type="radio" value="Apartamento">Apartamento</label>
+            <label for="apt"><input id="apt" name="moradia" selected type="radio" value="Apartamento">Apartamento</label>
+            </div>
+        </fieldset>
+        <fieldset required>
+            <legend>Sobre seu último emprego</legend>
+            <div>
+                <label for="">Resumo do currículo</label> <br>
+                <textarea name="name" placeholder="Digite sua biografia" cols="30" rows="5" maxlength="1000"></textarea>
+            </div>
+            <div>
+                <label for="">Cargo</label>
+                <input name="cargo" placeholder="Digite seu cargo" type="text" maxlength="40">
+            </div>
+            <div>
+                <label for="">Descrição do Cargo</label> <br>
+                <textarea name="name" placeholder="Descreva seu cargo" cols="30" rows="5" maxlength="500"></textarea>
+            </div>
+            <div>
+                <label for="">Data de Inicio</label>
+                <select name="dia-inicio" id="dia-inicio">
+                    <option disabled selected value="">--Selecione--</option>
+                </select>
+                <select name="mes-inicio" id="mes-inicio">
+                    <option disabled selected value="">--Selecione--</option>
+                </select>
+                <select name="ano-inicio" id="ano-inicio">
+                    <option disabled selected value="">--Selecione--</option>
+                </select>
             </div>
         </fieldset>
     </form>

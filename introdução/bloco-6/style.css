@@ -3,6 +3,11 @@ body {
     padding: 0;
 }
 
+div {
+    margin: 10px 10px 10px 10px;
+    padding: auto;
+}
+
 forms {
     margin-left: auto;
     margin-right: auto;
