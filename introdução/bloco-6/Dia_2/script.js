@@ -42,7 +42,7 @@ for (let index = 0; index < estados.length; index += 1) {
 
 let dayArray = [];
 
-for (let index2 = 1; index2 <= 31; index2 += 1){
+for (let index2 = 1; index2 <= 31; index2 += 1) {
     dayArray.push(index2);
 }
 
@@ -54,7 +54,7 @@ for (let index3 = 0; index3 < dayArray.length; index3 += 1) {
     diaData.appendChild(dayOptions);
 }
 
-    let meses = [
+let meses = [
     'Janeiro',
     'Fevereiro',
     'Março',
@@ -79,7 +79,7 @@ for (let index4 = 0; index4 < meses.length; index4 += 1) {
 
 let yearArray = [];
 
-for (let index5 = 1950; index5 <= 2020; index5 += 1){
+for (let index5 = 1950; index5 <= 2020; index5 += 1) {
     yearArray.push(index5);
 }
 
