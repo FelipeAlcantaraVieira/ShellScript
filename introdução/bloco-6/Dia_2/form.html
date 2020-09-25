@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="css/bulma.min.css" type="text/css">
+</head>
+
+<body>
+    <section class="section">
+        <header>
+            <h1 class="title">Formulário</h1>
+        </header>
+    </section>
+    <section class="section">
+        <form action="form.html" method="POST" class="forms">
+            <div class="field">
+                <label class="label" for="">Nome</label>
+                <div class="control">
+                    <input class="input" name="name" value="" placeholder="Digite seu nome" type="text" maxlength="40">
+                </div>
+            </div>
+            <div class="field">
+                <label class="label" for="">E-mail</label>
+                <div class="control">
+                    <input class="input" name="email" placeholder="Digite seu e-mail" type="text" maxlength="50">
+                </div>
+            </div>
+            <div class="field">
+                <label class="label" for="">CPF</label>
+                <div class="control">
+                    <input class="input" name="cpf" placeholder="Digite seu CPF" type="text" maxlength="11">
+                </div>
+            </div>
+            <div class="field">
+                <label class="label" for="">Endereço</label>
+                <div class="control">
+                    <input class="input" name="endereco" placeholder="Digite seu Endereço" type="text" maxlength="200">
+                </div>
+            </div>
+            <div class="field">
+                <label class="label" for="">Cidade</label>
+                <div class="control">
+                    <input class="input" name="cidade" placeholder="Digite sua Cidade" type="text" maxlength="28">
+                </div>
+            </div>
+            <div class="field">
+                <label class="label" for="">Estado</label>
+                <div class="control">
+                    <div class="select">
+                        <select name="estado" id="select-id">
+                            <option disabled selected value="">--Selecione--</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">Tipo</label>
+                <div class="control">
+                    <label class="radio" for="casa"><input id="casa" name="moradia" checked type="radio"
+                            value="Casa">Casa</label>
+                    <label class="radio" for="apt"><input id="apt" name="moradia" type="radio"
+                            value="Apartamento">Apartamento</label>
+                </div>
+            </div>
+            <div class="field">
+                <label class="label" for="">Resumo do currículo</label>
+                <div class="control">
+                    <textarea class="textarea" name="name" placeholder="Digite sua biografia" cols="30" rows="5"
+                        maxlength="1000"></textarea>
+                </div>
+            </div>
+            <div class="field">
+                <label class="label" for="">Cargo</label>
+                <div class="control">
+                    <input class="input" name="cargo" placeholder="Digite seu cargo" type="text" maxlength="40">
+                </div>
+            </div>
+            <div class="field">
+                <label class="label" for="">Descrição do Cargo</label>
+                <div class="control">
+                    <textarea class="textarea" name="name" placeholder="Descreva seu cargo" cols="30" rows="5"
+                        maxlength="500"></textarea>
+                </div>
+            </div>
+            <label class="label" for="">Data de Inicio</label>
+            <div class="select">
+                <select name="dia-inicio" id="dia-inicio">
+                    <option disabled selected value="">--Selecione--</option>
+                </select>
+            </div>
+            <div class="select">
+                <select name="mes-inicio" id="mes-inicio">
+                    <option disabled selected value="">--Selecione--</option>
+                </select>
+            </div>
+            <div class="select">
+                <select name="ano-inicio" id="ano-inicio">
+                    <option disabled selected value="">--Selecione--</option>
+                </select>
+            </div>
+            <div class="field">
+                <div class="control"> <br>
+                    <button class="button is-light" type="reset">Limpar</button>
+                </div>
+            </div>
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
