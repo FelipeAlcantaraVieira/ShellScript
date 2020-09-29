@@ -23,8 +23,7 @@
     <script>
         let counter = 0;
         document.querySelector('#button').addEventListener('click', () => {
-            counter += 1;
-            document.querySelector('#phrase').innerHTML = `you click on the button ${counter} times`;
+        document.querySelector('#phrase').innerHTML = `you click on the button ${counter += 1} times`;
         });
     </script>
 </body>
